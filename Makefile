@@ -2,8 +2,13 @@ PROFILE ?= mixed
 NAME ?= $(PROFILE)
 
 setup:
+ifneq ($(strip $(DATABASE_URL)),)
 	npm ci
 	npm run migrate
+else
+	docker compose up -d db
+	docker compose run --rm app make setup
+endif
 
 migrate:
 	npm run migrate
