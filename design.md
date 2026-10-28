@@ -63,11 +63,11 @@
 
 ## Окружение
 
-![Схема окружения системы](design/architecture/Окружение.excalidraw.svg)
+![Схема окружения системы](design/architecture/environment.excalidraw.svg)
 
 ## Компоненты
 
-![Путь запроса истории поездок](design/architecture/Запрос.excalidraw.svg)
+![Путь запроса истории поездок](design/architecture/components.excalidraw.svg)
 
 ## Модель данных
 
